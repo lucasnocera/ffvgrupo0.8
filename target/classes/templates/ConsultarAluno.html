@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Lista de Usuarios</title>
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet"></link>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<body>
+	<div class="panel panel-default" style="margin: 10px">
+		<div class="panel-heading">
+			<h2 class="panel-title">Lista de Usuarios</h2>
+			<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+				rel="stylesheet" />
+			<link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}"
+				rel="stylesheet" />
+		</div>
+		<div class="panel-body" th:switch="${alunos}">
+			<h2 th:case="null">Não existem usuarios cadastrados ainda!</h2>
+			<div th:case="*">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>NOME</th>
+							<th>RA</th>
+							<th>CURSO</th>
+							<th>CEP</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="aluno : ${alunos}">
+							<td th:text="${aluno.nome}"></td>
+							<td th:text="${aluno.ra}"></td>
+							<td th:text="${aluno.curso}"></td>
+							<td th:text="${aluno.cep}"></td>
+							<td>
+								<div class="btn-group pull-right">
+									<a class="btn btn-sm btn-primary"
+										th:href="@{/alunos/edit/{ra}(ra=${aluno.ra})}">Editar</a> <a
+										class="delete btn btn-sm btn-danger"
+										th:href="@{/alunos/delete/{id}(id=${aluno.id})}">Excluir</a>
+
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="row">
+						<div class="form-group col-md-8">
+							<a class="btn btn-primary" href="/"> <i class="oioi-home">
+							</i> <span>Voltar</span></a>
+						</div>
+					</div>
+			</div>
+		</div>
+</body>
+</html>

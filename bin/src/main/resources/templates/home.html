@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Sistema de Controle de Empréstimo de Livros</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<link rel="icon" href="/image/favicon.png" />
+<!-- Bootstrap core CSS -->
+<!--  link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css"-->
+<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	
+<!-- Custom styles for this template -->
+<link href="/css/style.css" rel="stylesheet" />
+</head>
+<body>
+	<header>
+		<nav
+			class="navbar navbar-inverse navbar navbar-dark bg-dark fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="btn btn-dark navbar-toggle pull-left">
+						<i class="oi oi-menu"></i>
+					</button>
+					<a class="navbar-brand " href="#">Sistema de Controle de
+						Empréstimos de Livros</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="layout-main">
+		<aside>
+			<nav class="sidebar sidebar-open">
+				<ul class="nav nav-pills">
+					<li class="nav-item"><a class="nav-link " href="/"> <iclass="oioi-home">
+							</i> <span>Home</span></a></li>
+				</ul>
+				<ul class="nav nav-pills">
+					<li class="nav-item"><span class="nav-link active">Livros</span></li>
+					<li class="nav-item"><a class="nav-link"
+						href="/livros/cadastrar"> <i class="oi oi-plus"></i> <span>Cadastrar</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="/livros/consulta"> <i class="oi oi-spreadsheet"></i> <span>Listar
+						</span>
+					</a></li>
+				</ul>
+				<ul class="nav nav-pills">
+					<li class="nav-item"><span class="nav-link active">Alunos</span></li>
+					<li class="nav-item"><a class="nav-link"
+						href="/alunos/cadastrar"> <i class="oi oi-plus"></i> <span>Cadastrar
+						</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="/alunos/consulta"> <i class="oi oi-spreadsheet"></i> <span>Listar
+						</span>
+					</a></li>
+				</ul>
+				<ul class="nav nav-pills">
+					<li class="nav-item"><span class="nav-link active">Emprestimos</span></li>
+					<li class="nav-item"><a class="nav-link"
+						href="/emprestimos/cadastrar"> <i class="oi oi-plus"></i> <span>Cadastrar
+						</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="/emprestimos/consulta"> <i class="oi oi-spreadsheet"></i>
+							<span>Listar </span>
+					</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<section class="layout-content">
+			<nav class="navbar navbar-expand-md bg-light">
+				<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active"><i class="oi oi-caret-right"></i>
+							<span>Home</span></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="container">
+				<div id="list-home" class="row">
+					<div class="col-4">
+						<div class="list-group" id="list-tab" role="tablist">
+							<a class="list-group-item list-group-item-action active"
+								id="list-spring-boot-list" data-toggle="list"
+								href="#spring-boot" role="tab" aria-controls="spring-boot">Spring-Boot</a>
+							<a class="list-group-item list-group-item-action"
+								id="list-sts-list" data-toggle="list" href="#sts" role="tab"
+								aria-controls="sts">Spring Tool Suite</a> <a
+								class="list-group-item list-group-item-action"
+								id="list-thymeleaf-list" data-toggle="list" href="#thymeleaf"
+								role="tab" aria-controls="thymeleaf">Thymeleaf</a> <a
+								class="list-group-item list-group-item-action"
+								id="list-webjars-list" data-toggle="list" href="#webjars"
+								role="tab" aria-controls="webjars">WebJars</a> <a
+								class="list-group-item list-group-item-action"
+								id="list-hibernate-list" data-toggle="list" href="#hibernate"
+								role="tab" aria-controls="hibernate">Hibernate</a> <a
+								class="list-group-item list-group-item-action"
+								id="list-bootstrap-list" data-toggle="list" href="#bootstrap"
+								role="tab" aria-controls="bootstrap">Bootstrap 4</a>
+						</div>
+					</div>
+					<div class="col-8">
+						<div class="tab-content" id="nav-tabContent">
+							<div class="tab-pane fade show active" id="spring-boot"
+								role="tabpanel" aria-labelledby="list-spring-boot-list">
+								<a href="https://projects.spring.io/spring-boot/">Spring
+									Boot</a> facilita a criação autonoma de aplicações que podem
+								rapidamente ser colocada em produção. O Spring Boot torna
+								disponivel um conjunto de bibliotecas de terceiros que podem ser
+								utilizados com pouca configuração.
+							</div>
+							<div class="tab-pane fade" id="sts" role="tabpanel"
+								aria-labelledby="list-sts-list">
+								The <a href="https://spring.io/tools">Spring Tool Suite</a> é um
+								ambiente de desenvolvimento baseado em Eclipse que está
+								customizado para implementação de aplicações Spring. O STS prove
+								uma estrutura de programação integrada para debugar, executar e
+								entregar uma aplicação Spring incluindo a configuração com um
+								servidor de aplicações, Git, Maven, AspectJ, entre outros.
+							</div>
+
+							<div class="tab-pane fade" id="thymeleaf" role="tabpanel"
+								aria-labelledby="list-thymeleaf-list">
+								<a href="http://www.thymeleaf.org/">Thymeleaf</a> é um framework
+								de programação da interface de comunicação para aplicações Java
+								web. Atualmente existem varios frameworks de integração da GUI
+								com o servidor web.
+							</div>
+							<div class="tab-pane fade" id="webjars" role="tabpanel"
+								aria-labelledby="list-webjars-list">
+								<a href="https://www.webjars.org/">WebJars</a> são bibliotecas
+								utilizadas no lado do cliente empactodas dentro de arquivos Jar
+								(e.g. jQuery ; Bootstrap).
+							</div>
+							<div class="tab-pane fade" id="hibernate" role="tabpanel"
+								aria-labelledby="list-hibernate-list">
+								<a href="http://hibernate.org/orm/">Hibernate ORM</a> facilita o
+								desenvolvimento de aplicações para manipulação de dados. O
+								framework Hibernate é uma ferramenta de mapeamento
+								Object/Relational Mapping (ORM) que permite a persistencia
+								utilizando banco de dados relacional (via JDBC). <br />
+								Hibernate implementa a especificação JPA.
+							</div>
+							<div class="tab-pane fade" id="bootstrap" role="tabpanel"
+								aria-labelledby="list-bootstrap-list">
+								<a href="https://getbootstrap.com/">Bootstrap</a> fornece uma
+								estrutura para o desenvolvimento de HTML, CSS e JS. Permite a
+								prototipagem rapida de para validar o design da interface de
+								sistemas de softwareo.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer th:replace="fragments/footer :: rodape">
+		<div>footer</div>
+	</footer>
+	<!-- Bootstrap core JavaScript
+================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="/webjars/jquery/jquery.min.js"></script>
+	<script src="/webjars/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	
+		$(function() {
+			$('[data-toggle="popover"]').popover();
+		});
+		$(document).ready(function() {
+			$(".navbar-toggle").click(function() {
+				$(".sidebar").toggleClass("sidebar-open");
+			})
+		});
+	</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
